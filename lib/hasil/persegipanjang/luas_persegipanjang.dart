@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 var fontFamilyHome = const TextStyle(
   fontFamily: 'Montserrat',
-  fontSize: 20,
+  fontSize: 20.0,
 );
 
 class LuasPersegiPanjang extends StatelessWidget {
@@ -20,8 +20,8 @@ class LuasPersegiPanjang extends StatelessWidget {
         title: Text(
           "Hasil Luas Persegi Panjang",
           style: fontFamilyHome,
-          textAlign: TextAlign.center,
         ),
+        centerTitle: true,
       ),
       body: Center(
         child: Column(
@@ -30,27 +30,37 @@ class LuasPersegiPanjang extends StatelessWidget {
             const Padding(padding: EdgeInsets.all(10.0)),
             Container(
               margin: const EdgeInsets.all(10.0),
-              child: Text("Panjang = $panjang cm"),
+              child: Text(
+                "Panjang = $panjang cm",
+                style: fontFamilyHome,
+              ),
             ),
             const Padding(padding: EdgeInsets.all(10.0)),
             Container(
               margin: const EdgeInsets.all(10.0),
-              child: Text("Lebar = $lebar cm"),
+              child: Text(
+                "Lebar = $lebar cm",
+                style: fontFamilyHome,
+              ),
             ),
             const Padding(padding: EdgeInsets.all(10.0)),
             Container(
               margin: const EdgeInsets.all(10.0),
-              child: Text("Hasil Luas Persegi Panjang = $luasbangun cm"),
+              child: Text(
+                "Hasil Luas Persegi Panjang = $luasbangun cm",
+                style: fontFamilyHome,
+              ),
             ),
             const Padding(padding: EdgeInsets.all(10.0)),
             ElevatedButton(
+                style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(Colors.orange)),
                 onPressed: () {
                   Navigator.pop(context);
                 },
                 child: Text(
                   'Kembali',
                   style: fontFamilyHome,
-                  textAlign: TextAlign.center,
                 ))
           ],
         ),

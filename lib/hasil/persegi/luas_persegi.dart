@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 var fontFamilyHome = const TextStyle(
   fontFamily: 'Montserrat',
-  fontSize: 20,
+  fontSize: 20.0,
 );
 
 class LuasPersegi extends StatelessWidget {
@@ -14,10 +14,15 @@ class LuasPersegi extends StatelessWidget {
     int luas = sisi.toInt() * sisi.toInt();
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Hasil Luas Persegi"),
+        title: Text(
+          "Hasil Luas Persegi",
+          style: fontFamilyHome,
+        ),
+        centerTitle: true,
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Padding(padding: EdgeInsets.all(15.0)),
             Container(
@@ -33,7 +38,6 @@ class LuasPersegi extends StatelessWidget {
               child: Text(
                 "Hasil Luas Persegi = $luas cm",
                 style: fontFamilyHome,
-                textAlign: TextAlign.center,
               ),
             ),
             ElevatedButton(
@@ -43,7 +47,10 @@ class LuasPersegi extends StatelessWidget {
                 onPressed: () {
                   Navigator.pop(context);
                 },
-                child: const Text("Kembali"))
+                child: Text(
+                  "Kembali",
+                  style: fontFamilyHome,
+                ))
           ],
         ),
       ),

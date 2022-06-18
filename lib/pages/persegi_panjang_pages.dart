@@ -10,9 +10,8 @@ class PersegiPanjangPage extends StatefulWidget {
 }
 
 class _PersegiPanjangPageState extends State<PersegiPanjangPage> {
-  var fontFamilyHome = const TextStyle(
-    fontFamily: 'Montserrat',
-  );
+  var fontFamilyHome =
+      const TextStyle(fontFamily: 'Montserrat', fontSize: 20.0);
   int panjang = 0;
   int lebar = 0;
   @override
@@ -22,8 +21,8 @@ class _PersegiPanjangPageState extends State<PersegiPanjangPage> {
         title: Text(
           "Persegi Panjang",
           style: fontFamilyHome,
-          textAlign: TextAlign.center,
         ),
+        centerTitle: true,
       ),
       body: SingleChildScrollView(
         child: Column(

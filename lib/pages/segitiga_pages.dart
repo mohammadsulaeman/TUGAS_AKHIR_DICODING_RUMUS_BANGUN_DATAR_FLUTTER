@@ -24,8 +24,8 @@ class _SegitigaPageState extends State<SegitigaPage> {
         title: Text(
           'Segitiga',
           style: fontFamilyHome,
-          textAlign: TextAlign.center,
         ),
+        centerTitle: true,
       ),
       body: SingleChildScrollView(
         child: Column(

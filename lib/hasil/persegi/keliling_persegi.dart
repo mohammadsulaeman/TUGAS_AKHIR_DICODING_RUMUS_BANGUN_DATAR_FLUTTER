@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 var fontFamilyHome = const TextStyle(
   fontFamily: 'Montserrat',
-  fontSize: 20,
+  fontSize: 20.0,
 );
 
 class KelilingPersegi extends StatelessWidget {
@@ -17,11 +17,12 @@ class KelilingPersegi extends StatelessWidget {
         title: Text(
           "Keliling Persegi",
           style: fontFamilyHome,
-          textAlign: TextAlign.center,
         ),
+        centerTitle: true,
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Container(
               margin: const EdgeInsets.all(10.0),

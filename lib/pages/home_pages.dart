@@ -5,7 +5,7 @@ import 'package:rumus_bangun_datar/pages/segitiga_pages.dart';
 
 var fontFamilyHome = const TextStyle(
   fontFamily: 'Montserrat',
-  fontSize: 20,
+  fontSize: 20.0,
 );
 
 class MyHomePage extends StatelessWidget {
@@ -15,11 +15,12 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text(
-        'Rumus Bangun Datar',
-        textAlign: TextAlign.center,
-        style: fontFamilyHome,
-      )),
+        title: Text(
+          'Rumus Bangun Datar',
+          style: fontFamilyHome,
+        ),
+        centerTitle: true,
+      ),
       body: SingleChildScrollView(
         child: Center(
           child: Column(

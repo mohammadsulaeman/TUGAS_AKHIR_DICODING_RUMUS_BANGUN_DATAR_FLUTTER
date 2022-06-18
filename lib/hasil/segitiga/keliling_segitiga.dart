@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:rumus_bangun_datar/pages/segitiga_pages.dart';
 
 var fontFamilyHome = const TextStyle(
   fontFamily: 'Montserrat',
-  fontSize: 20,
+  fontSize: 20.0,
 );
 
 class KelilingSegitiga extends StatelessWidget {
@@ -22,11 +21,12 @@ class KelilingSegitiga extends StatelessWidget {
         title: Text(
           "Hasil Keliling Segitiga",
           style: fontFamilyHome,
-          textAlign: TextAlign.center,
         ),
+        centerTitle: true,
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Padding(padding: EdgeInsets.all(10.0)),
             Container(
@@ -34,7 +34,6 @@ class KelilingSegitiga extends StatelessWidget {
               child: Text(
                 "Nilai a = $a cm",
                 style: fontFamilyHome,
-                textAlign: TextAlign.center,
               ),
             ),
             const Padding(padding: EdgeInsets.all(10.0)),
@@ -43,7 +42,6 @@ class KelilingSegitiga extends StatelessWidget {
               child: Text(
                 "Nilai b = $b cm",
                 style: fontFamilyHome,
-                textAlign: TextAlign.center,
               ),
             ),
             const Padding(padding: EdgeInsets.all(10.0)),
@@ -52,7 +50,6 @@ class KelilingSegitiga extends StatelessWidget {
               child: Text(
                 "Nilai c = $c cm",
                 style: fontFamilyHome,
-                textAlign: TextAlign.center,
               ),
             ),
             const Padding(padding: EdgeInsets.all(10.0)),
@@ -61,7 +58,6 @@ class KelilingSegitiga extends StatelessWidget {
               child: Text(
                 "Hasil Keliling Segitiga = $keliling cm",
                 style: fontFamilyHome,
-                textAlign: TextAlign.center,
               ),
             ),
             const Padding(padding: EdgeInsets.all(10.0)),
@@ -74,7 +70,6 @@ class KelilingSegitiga extends StatelessWidget {
               child: Text(
                 'Kembali',
                 style: fontFamilyHome,
-                textAlign: TextAlign.center,
               ),
             )
           ],

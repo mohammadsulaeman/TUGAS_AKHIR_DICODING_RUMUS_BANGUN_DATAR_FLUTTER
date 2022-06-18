@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:rumus_bangun_datar/hasil/persegipanjang/luas_persegipanjang.dart';
 
 var fontFamilyHome = const TextStyle(
   fontFamily: 'Montserrat',
-  fontSize: 20,
+  fontSize: 20.0,
 );
 
 class KelilingPersegiPanjang extends StatelessWidget {
@@ -21,11 +20,12 @@ class KelilingPersegiPanjang extends StatelessWidget {
         title: Text(
           "Hasil Luas Persegi Panjang",
           style: fontFamilyHome,
-          textAlign: TextAlign.center,
         ),
+        centerTitle: true,
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Padding(padding: EdgeInsets.all(10.0)),
             Container(
@@ -33,7 +33,6 @@ class KelilingPersegiPanjang extends StatelessWidget {
               child: Text(
                 "Panjang = $panjang cm",
                 style: fontFamilyHome,
-                textAlign: TextAlign.center,
               ),
             ),
             const Padding(padding: EdgeInsets.all(10.0)),
@@ -42,7 +41,6 @@ class KelilingPersegiPanjang extends StatelessWidget {
               child: Text(
                 "Lebar = $lebar cm",
                 style: fontFamilyHome,
-                textAlign: TextAlign.center,
               ),
             ),
             const Padding(padding: EdgeInsets.all(10.0)),
@@ -51,7 +49,6 @@ class KelilingPersegiPanjang extends StatelessWidget {
               child: Text(
                 "Hasil Keliling Persegi Panjang = $keliling cm",
                 style: fontFamilyHome,
-                textAlign: TextAlign.center,
               ),
             ),
             const Padding(padding: EdgeInsets.all(10.0)),

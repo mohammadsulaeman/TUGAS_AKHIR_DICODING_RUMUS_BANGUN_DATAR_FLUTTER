@@ -12,7 +12,7 @@ class PersegiPage extends StatefulWidget {
 class _PersegiPageState extends State<PersegiPage> {
   var fontFamilyHome = const TextStyle(
     fontFamily: 'Montserrat',
-    fontSize: 20,
+    fontSize: 20.0,
   );
   int sisi = 0;
 
@@ -23,8 +23,8 @@ class _PersegiPageState extends State<PersegiPage> {
         title: Text(
           "Persegi",
           style: fontFamilyHome,
-          textAlign: TextAlign.center,
         ),
+        centerTitle: true,
       ),
       body: SingleChildScrollView(
         child: Center(
@@ -117,7 +117,6 @@ class _PersegiPageState extends State<PersegiPage> {
                     child: Text(
                       "Keliling Persegi",
                       style: fontFamilyHome,
-                      textAlign: TextAlign.center,
                     ),
                   ),
                 ],
